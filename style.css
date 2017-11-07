@@ -212,4 +212,105 @@ footer p {
   footer {
     width: 100% ;
   }
+
+}
+.header-body{
+  background-color: #000000;
+  background-image: url(./img/website-startups.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header-top{
+  width: 100%;
+  height: 5vh;
+  padding-top: 2.5vh;
+  background-color: rgba(96, 125, 139, 0.2);
+  text-align: center;
+}
+
+
+.head-top-labels li{
+  font-size: 16px;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  display: inline;
+}
+
+.header-contents{
+  background-image: url(./img/logo.jpg);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+#logo-pic{
+  width: 175px;
+  height: 175px;
+}
+
+h1{
+  font-size: 48px;
+  font-family: system-ui;
+  color: #C44513;
+  font-weight: bold;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+p{
+  font-size: 24px;
+}
+
+#home-label:checked ~ body{
+  transform: translateY(0%);
+}
+
+
+#about-label:checked ~ body{
+  transform: translateY(-100%);
+}
+
+
+#team-label:checked ~ body{
+  transform: translateY(-200%);
+}
+
+
+#contact-label:checked ~ body{
+  transform: translateY(-300%);
+}
+
+@media only screen and (max-width: 430px) {
+
+  .head-top-labels label{
+    font-size: 10px;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-right: 2.5vh;
+    margin-left: 2.5vh;
+  }
+
+  .header-contents{
+    background-image: url(./img/logo.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 10vh;
+    text-align: center;
+  }
+
+  #logo-pic{
+    width: 125px;
+    height: 125px;
+  }
+
+  h1{
+    font-size: 36px;
+  }
+  p{
+    font-size: 18px;
+  }
+
 }
