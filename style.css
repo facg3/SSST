@@ -1,1 +1,95 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container {
+    width: 1200px;
+    margin: auto;
+}
+.text-center{
+  text-align: center;
+}
+.upper{
+  text-transform: uppercase;
+  font-family: 'Permanent Marker', cursive;
+}
+.our-team {
+    padding: 4% 0;
+    background: url('img/1.jpg');
+   -webkit-background-size:cover;
+   -moz-background-size:cover;
+   -o-background-size:cover;
+   background-size:cover;
+   position: relative;
+   height: 100vh;
+}
+.our-team .overlay{
+  position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8)
+}
 
+.our-team h2 {
+    color: #888;
+    font-size: 35px;
+    margin-bottom: 4%;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.our-team .the-team {
+    overflow: hidden
+}
+
+.our-team .the-team .person {
+    float: left;
+    width: 24%;
+    margin-left: 1%;
+    color: #888
+}
+
+.our-team .the-team .person:hover img {
+    filter: none;
+    -webkit-filter: grayscale(0)
+}
+
+.our-team .the-team .person:hover {
+    color: #555
+}
+
+.our-team .the-team .person:hover .fa-linkedin {
+    background-color: #8d6cab
+}
+
+.our-team .the-team .person:hover .fa-twitter {
+    background-color: #55acee
+}
+
+.our-team .the-team .person:hover .fa-github {
+    background-color: #333
+}
+
+
+.our-team .the-team .person img {
+    width: 265px;
+    height: 290px;
+    border-radius: 50%;
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1)
+}
+
+.our-team .the-team .social-icons i {
+    background-color: #9da1a5;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
