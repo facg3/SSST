@@ -1,8 +1,3 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 .container {
     width: 1200px;
     margin: auto;
@@ -16,15 +11,15 @@
 }
 .our-team {
     padding: 4% 0;
-    background: url('img/1.jpg');
+    /*background: url('img/1.jpg');
    -webkit-background-size:cover;
    -moz-background-size:cover;
    -o-background-size:cover;
    background-size:cover;
    position: relative;
-   height: 100vh;
+   height: 100vh;*/
 }
-.our-team .overlay{
+/*.our-team .overlay{
   position: absolute;
     left: 0;
     top: 0;
@@ -33,7 +28,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .8)
-}
+}*/
 
 .our-team h2 {
     color: #888;
