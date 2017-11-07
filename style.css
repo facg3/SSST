@@ -1,91 +1,123 @@
-
 * {
-  padding: 0 ; margin: 0 ;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  font-family: Arial ;
+.container {
+    width: 1200px;
+    margin: auto;
+}
+.text-center{
+  text-align: center;
+}
+.upper{
+  text-transform: uppercase;
+  font-family: 'Permanent Marker', cursive;
+}
+.our-team {
+    padding: 4% 0;
+    /*background: url('img/1.jpg');
+   -webkit-background-size:cover;
+   -moz-background-size:cover;
+   -o-background-size:cover;
+   background-size:cover;
+   position: relative;
+   height: 100vh;*/
+}
+/*.our-team .overlay{
+  position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8)
+}*/
+
+.our-team h2 {
+    color: #888;
+    font-size: 35px;
+    margin-bottom: 4%;
+    font-family: 'Permanent Marker', cursive;
 }
 
-form {
-  width: 700px ; height: auto ;
-  margin: 0 auto;
-
-  margin-top: 100px ;
-  padding-top: 60px ;
-  padding-bottom: 100px ;
+.our-team .the-team {
+    overflow: hidden
 }
 
-#letsWork {
-  margin-left: 7em ;
+.our-team .the-team .person {
+    float: left;
+    width: 24%;
+    margin-left: 1%;
+    color: #888
 }
 
-#formInputs {
-  margin-left: 130px ;
-
-}
-#formInputs input {
- width: 200px ; height: 20px ;
+.our-team .the-team .person:hover img {
+    filter: none;
+    -webkit-filter: grayscale(0)
 }
 
-#tellMe {
-  margin-left: 130px ;
-}
-#tellMe  textarea{
-  width: 80% ;
-}
-label {
-  margin-bottom: 10px ; margin-top: 10px ;
-}
-input, label  , textarea{
-    display:block;
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px ;
+.our-team .the-team .person:hover {
+    color: #555
 }
 
-form button {
-  margin-top: 3em  ;  margin-right: 9em ; height: 40px ; width: 100px ;
-  background-color: white ; float: right;border-radius: 10px;
+.our-team .the-team .person:hover .fa-linkedin {
+    background-color: #8d6cab
 }
 
-footer {
-  color: white ;
-  width: 100% ;
-  height: 4em ;
-  background: url('img/background.jpg') ;
-  background-size: cover;
-  margin: 0 auto;
-
+.our-team .the-team .person:hover .fa-twitter {
+    background-color: #55acee
 }
 
-footer .left {
-  margin-left: 3em  ; float: left;
-
-}
-ul#menu  {
-  display: block;
-}
-ul#menu li {
-    display:inline; float: left;
-    margin: 1.5em 0.5em 1.5em 0.5em ;
-}
-footer p {
-  float: left;
-  margin-top: 45px ; margin-left: -235px ;  font-size: small ;
+.our-team .the-team .person:hover .fa-github {
+    background-color: #333
 }
 
-@media screen and (max-width: 959px) {
- form , footer , textarea{
-   width: 100% ;
- }
+
+.our-team .the-team .person img {
+    width: 265px;
+    height: 290px;
+    border-radius: 50%;
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1)
+}
+
+.our-team .the-team .social-icons i {
+    background-color: #9da1a5;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.service-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  background-color: blue;
 
 }
 
-@media screen and (max-width: 640px) {
-  form {
-    width: 100% ;
-  }
-  footer {
-    width: 100% ;
+.service {
+  width: 30%;
+  text-align: center;
+}
+
+.service img {
+  width: 200px;
+
+  margin-bottom: 10px;
+}
+
+@media (min-width: 500px){
+  .service-container {
+    flex-direction: row;
   }
 }
