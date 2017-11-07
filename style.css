@@ -213,7 +213,7 @@ footer p {
     width: 100% ;
   }
 
-
+}
 .header-body{
   background-color: #000000;
   background-image: url(./img/website-startups.jpg);
@@ -232,10 +232,11 @@ footer p {
 }
 
 
-.head-top-labels label{
+.head-top-labels li{
   font-size: 16px;
   margin-left: 5vh;
   margin-right: 5vh;
+  display: inline;
 }
 
 .header-contents{
@@ -281,7 +282,6 @@ p{
 #contact-label:checked ~ body{
   transform: translateY(-300%);
 }
-
 
 @media only screen and (max-width: 430px) {
 
