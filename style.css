@@ -1,221 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
 }
+/*Sultan Begins*/
 
-.container {
-    width: 1200px;
-    margin: auto;
-}
-.text-center{
-  text-align: center;
-}
-.upper{
-  text-transform: uppercase;
-  font-family: 'Permanent Marker', cursive;
-}
-.our-team {
-    padding: 4% 0;
-    /*background: url('img/1.jpg');
-   -webkit-background-size:cover;
-   -moz-background-size:cover;
-   -o-background-size:cover;
-   background-size:cover;
-   position: relative;
-   height: 100vh;*/
-}
-/*.our-team .overlay{
-  position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .8)
-}*/
-
-.our-team h2 {
-    color: #888;
-    font-size: 35px;
-    margin-bottom: 4%;
-    font-family: 'Permanent Marker', cursive;
-}
-
-.our-team .the-team {
-    overflow: hidden
-}
-
-.our-team .the-team .person {
-    float: left;
-    width: 24%;
-    margin-left: 1%;
-    color: #888
-}
-
-.our-team .the-team .person:hover img {
-    filter: none;
-    -webkit-filter: grayscale(0)
-}
-
-.our-team .the-team .person:hover {
-    color: #555
-}
-
-.our-team .the-team .person:hover .fa-linkedin {
-    background-color: #8d6cab
-}
-
-.our-team .the-team .person:hover .fa-twitter {
-    background-color: #55acee
-}
-
-.our-team .the-team .person:hover .fa-github {
-    background-color: #333
-}
-
-
-.our-team .the-team .person img {
-    width: 265px;
-    height: 290px;
-    border-radius: 50%;
-    filter: gray;
-    filter: grayscale(1);
-    -webkit-filter: grayscale(1)
-}
-
-.our-team .the-team .social-icons i {
-    background-color: #9da1a5;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    color: #FFF;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-
-.service-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  height: 500px;
-  background-color: blue;
-
-}
-
-.service {
-  width: 30%;
-  text-align: center;
-}
-
-.service img {
-  width: 200px;
-
-  margin-bottom: 10px;
-}
-
-@media (min-width: 500px){
-  .service-container {
-    flex-direction: row;
-  }
-}
-
-
-* {
-  padding: 0 ; margin: 0 ;
-}
-
-body {
-  font-family: Arial ;
-}
-
-form {
-  width: 700px ; height: auto ;
-  margin: 0 auto;
-
-  margin-top: 100px ;
-  padding-top: 60px ;
-  padding-bottom: 100px ;
-}
-
-#letsWork {
-  margin-left: 7em ;
-}
-
-#formInputs {
-  margin-left: 130px ;
-
-}
-#formInputs input {
- width: 200px ; height: 20px ;
-}
-
-#tellMe {
-  margin-left: 130px ;
-}
-#tellMe  textarea{
-  width: 80% ;
-}
-label {
-  margin-bottom: 10px ; margin-top: 10px ;
-}
-input, label  , textarea{
-    display:block;
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px ;
-}
-
-form button {
-  margin-top: 3em  ;  margin-right: 9em ; height: 40px ; width: 100px ;
-  background-color: white ; float: right;border-radius: 10px;
-}
-
-footer {
-  color: white ;
-  width: 100% ;
-  height: 4em ;
-  background: url('img/background.jpg') ;
-  background-size: cover;
-  margin: 0 auto;
-
-}
-
-footer .left {
-  margin-left: 3em  ; float: left;
-
-}
-ul#menu  {
-  display: block;
-}
-ul#menu li {
-    display:inline; float: left;
-    margin: 1.5em 0.5em 1.5em 0.5em ;
-}
-footer p {
-  float: left;
-  margin-top: 45px ; margin-left: -235px ;  font-size: small ;
-}
-
-@media screen and (max-width: 959px) {
- form , footer , textarea{
-   width: 100% ;
- }
-
-}
-
-@media screen and (max-width: 640px) {
-  form {
-    width: 100% ;
-  }
-  footer {
-    width: 100% ;
-  }
-
-}
 .header-body{
-  background-color: #000000;
   background-image: url(./img/website-startups.jpg);
   background-size: cover;
   background-position: center;
@@ -225,26 +16,26 @@ footer p {
 
 .header-top{
   width: 100%;
-  height: 5vh;
+  height: 7.5vh;
   padding-top: 2.5vh;
-  background-color: rgba(96, 125, 139, 0.2);
-  text-align: center;
+  background-color: rgba(96, 125, 139, 0.9);
+  z-index: 1;
 }
 
 
-.head-top-labels li{
+.head-top-labels input{
   font-size: 16px;
-  margin-left: 5vh;
-  margin-right: 5vh;
   display: inline;
+  visibility: hidden;
+  text-decoration: none;
+  float: right;
+  padding-top: 10px  ;
 }
+
 
 .header-contents{
-  background-image: url(./img/logo.jpg);
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  margin-top: 10vh;
   text-align: center;
+  padding-top: 30vh;
 }
 
 #logo-pic{
@@ -257,48 +48,83 @@ h1{
   font-family: system-ui;
   color: #C44513;
   font-weight: bold;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
+  text-align: center;
+  width: 100%;
 }
-p{
+.header-contents p{
   font-size: 24px;
 }
 
-#home-label:checked ~ body{
+.header-contents h1{
+  background-color: inherit;
+}
+
+.header-top{
+  position: fixed;
+}
+
+#home-label:checked ~ .body{
   transform: translateY(0%);
+
 }
 
 
-#about-label:checked ~ body{
+#services-label:checked ~ .body{
   transform: translateY(-100%);
+
 }
 
 
-#team-label:checked ~ body{
+#team-label:checked ~ .body{
   transform: translateY(-200%);
+
+
 }
 
 
-#contact-label:checked ~ body{
+#contact-label:checked ~ .body{
   transform: translateY(-300%);
+
+
+}
+scroll-container {
+  display: block;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 100vh;
 }
 
-@media only screen and (max-width: 430px) {
 
-  .head-top-labels label{
-    font-size: 10px;
-    justify-content: space-around;
+.head-top-labels{
+  width: 100%;
+  text-align: left;
+}
+
+.head-top-labels a{
+  text-decoration: none;
+  margin-left: 5vh;
+  color: black;
+}
+.head-top-labels a:visited{
+  color: black;
+}
+.head-top-labels a:checked{
+  color: orange;
+}
+
+@media only screen and (max-width: 550px) {
+
+  .head-top-labels a{
+    text-align: center;
+    float: none;
+    font-size: 16px;
     flex-direction: row;
-    margin-right: 2.5vh;
-    margin-left: 2.5vh;
+    margin-left: 1vh
   }
 
   .header-contents{
-    background-image: url(./img/logo.jpg);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    margin-top: 10vh;
     text-align: center;
+    padding-top: 30vh;
   }
 
   #logo-pic{
@@ -314,3 +140,341 @@ p{
   }
 
 }
+@media only screen and (max-width: 440px) {
+  .head-top-labels a{
+    text-align: center;
+    font-size: 16px;
+    margin-right: 2vh;
+  }
+  .head-top-labels input{
+    padding-bottom: 2vh;
+  }
+  .head-top-labels{
+    text-align: center;
+  }
+  .header-contents{
+    text-align: center;
+    padding-top: 30vh;
+  }
+
+  #logo-pic{
+    width: 95px;
+    height: 95px;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+  p{
+    font-size: 14px;
+  }
+
+  .header-top{
+    width: 100%;
+    height: 10vh;
+    padding-top: 2.5vh;
+    background-color: rgba(96, 125, 139, 0.9);
+    z-index: 1;
+    padding-left: 2.5vh;
+  }
+
+}
+/*Sultan Ends*/
+
+/*Salam Begins*/
+.wrapper {
+width: 100%;
+margin: 0 auto;
+justify-content: center;
+padding-bottom: 16vh;
+padding-top: 10vh;
+}
+.flex-container {
+padding-top: 80px;
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+flex: 1;
+}
+.box {
+padding-top: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+flex: 1;
+justify-content: center;
+}
+.box img {
+width: 200px;
+flex: 1;
+}
+.wrapper .services {
+text-align: center;
+font-size: 30px;
+}
+.box .text {
+flex: 1;
+padding-top: 20px;
+}
+.text h2, h3 {
+margin-top: 10px;
+text-align: center;
+}
+@media only screen and (max-width: 777px) {
+.flex-container {
+flex-direction: column;
+}
+}
+@media only screen and (max-width: 430px) {
+.box img {
+width: 100px;
+}
+}
+/*Salam Ends*/
+
+/*Samar Begins*/
+#our-team{
+  padding-top: 15vh;
+  padding-bottom: 10vh;
+}
+.container{
+width: 100%;
+margin: auto;
+}
+
+.person h3{
+margin-top: 30px;
+font-size: 20px;
+text-transform: uppercase;
+font-family: 'Courgette', cursive;
+font-family: 'Source Serif Pro', serif;
+text-align: center;
+color: #888;
+}
+.person:hover h3{
+color: #333;
+}
+.person p{
+font-family: 'Courgette', cursive;
+font-family: 'Source Serif Pro', serif;
+text-align: center;
+color: #888;
+}
+.team .person:hover .fa-linkedin {
+color: #8d6cab
+}
+.team .person:hover .fa-twitter {
+color: #55acee
+}
+.team .person:hover .fa-github-alt {
+color: #c9510c;
+}
+.team .info i{
+width: 30px;
+height: 30px;
+line-height: 30px;
+border-radius: 50%;
+cursor: pointer;
+color: #888;
+}
+.team .person {
+width: 24%;
+padding: 20px;
+text-align: center;
+display: inline-block;
+margin-left: 1%;
+/margin-top: -280px;/
+}
+.team .person .photo {
+width: 350px;
+height: 350px;
+padding: 0 0 10px 0;
+}
+.team .person .photo img {
+width: 100%;
+height: 100%;
+border-radius: 50%;
+filter: gray;
+filter: grayscale(1);
+-webkit-filter: grayscale(1)
+}
+.team .person:hover .photo img{
+filter: none;
+filter: grayscale(0);
+-webkit-filter: grayscale(0)
+}
+.team .person .name h3,
+.team .person .name p {
+line-height: 30px;
+}
+.team .person .info {
+padding: 10px 0 0 0;
+}
+/*/ Hover /*/
+/*/ Pulse Shrink /*/
+.hvr-grow {
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px transparent;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: transform;
+transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+/*/ End Hover /*/
+@media(min-width:348px) {
+.team {
+text-align: center;
+}
+.team .person {
+width: 90%;
+margin-bottom: 15px;
+}
+.team .person .photo {
+width: 200px;
+height: 200px;
+margin: auto;
+}
+.team .person .photo img {
+width: 100%;
+height: 100%;
+}
+}
+@media (min-width:500px) {
+.team {
+text-align: center;
+}
+.team .person {
+width: 48%;
+}
+.team .person .photo {
+    margin: auto
+}
+}
+@media(min-width:775px) {
+.team {
+text-align: center;
+}
+.team .person {
+width: 35%;
+}
+.team .person .photo {
+    margin: auto
+}
+}
+@media(min-width:975px) {
+.team {
+text-align: center;
+}
+.team .person {
+width: 23%;
+}
+.team .person .photo {
+    margin: auto
+}
+}
+
+@media(max-width: 355px){
+
+  .team{
+  text-align: center;
+  }
+  .team .person {
+  width: 90%;
+  margin-bottom: 15px;
+  }
+  .team .person .photo {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  }
+  .team .person .photo img {
+  width: 100%;
+  height: 100%;
+  }
+
+}
+/*Samar Ends*/
+
+/*Tariq Begins*/
+.contact-form{
+  text-align: center;
+}
+form {
+width: 50%;
+height: auto ;
+margin: 0 auto;
+padding-top: 60px ;
+padding-bottom: 100px ;
+margin-bottom: 15px ;
+margin-top: 15px ;
+border-radius: 10px ;
+}
+letsWork {
+margin-left: 7em ;
+}
+
+#formInputs{
+  text-align: left;
+}
+
+#tellMe {
+margin-top: 2.5vh;
+text-align: left;
+}
+form button {
+height: 40px ; width: 100px ;
+background-color: white ;
+border-radius: 10px;
+}
+#name{
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
+form input{
+  border-radius: 10px;
+  height: 5vh;
+  padding-left: 1vh;
+}
+form textarea{
+  border-radius: 10px;
+  padding-left: 1vh;
+  padding-top: 1vh;
+}
+
+footer {
+width: 100% ;
+height: 10vh ;
+color: #C44513 ;
+background: url('img/background.jpg') ;
+background-size: cover;
+background-position: center;
+padding-left: 5vh;
+padding-top: 4vh;
+font-weight: bold;
+}
+
+
+@media screen and (max-width: 959px) {
+textarea{
+width: 100% ;
+}
+}
+@media screen and (max-width: 600px) {
+textarea{
+width: 100% ;
+}
+footer .left {
+width: 100% ;
+height: 40px ;
+}
+}
+
+/*Tariq Ends*/
