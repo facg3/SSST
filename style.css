@@ -172,34 +172,66 @@
 
 }
 /* End Samar Css */
-.service-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  height: 500px;
-  background-color: blue;
+=======
+/*start services style*/
 
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
-.service {
-  width: 30%;
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex: 1;
+}
+
+.box {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.box img {
+  width: 200px;
+  flex: 1;
+}
+
+.wrapper .services {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+  
+}
+
+.box .text {
+  flex: 1;
+  padding-top: 20px;
+}
+
+.text h2, h3 {
+  margin-top: 10px;
   text-align: center;
 }
 
-.service img {
-  width: 200px;
-
-  margin-bottom: 10px;
+@media only screen and (max-width: 777px) {
+  .flex-container {
+    flex-direction: column;
+    }
 }
 
-@media (min-width: 500px){
-  .service-container {
-    flex-direction: row;
+@media only screen and (max-width: 430px) {
+  .box img {
+    width: 100px;
   }
 }
-
-
+/*end services style*/
 * {
   padding: 0 ; margin: 0 ;
 }
