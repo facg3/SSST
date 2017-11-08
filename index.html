@@ -11,16 +11,32 @@
   </head>
 
   <body>
+
     <!-- This is SULTAN section: Header -->
     <header>
-      <section class="header-body">
+      <section class="header-body" id="header-body">
+
           <section class="header-top">
+
             <ul class="head-top-labels">
-                <li id="home-label">HOME</li>
-                <li id="about-label">ABOUT</li>
-                <li id="team-label">TEAM</li>
-                <li id="contact-label">CONTACT</li>
+
+                <input type="radio" name="radio-set" id="SSST-Band">
+                <a href="#header-body" for="home-label">SSST Band</a>
+
+
+                <input type="radio" name="radio-set" id="home-label">
+                <a href="#header-body" for="home-label">HOME</a>
+
+                <input type="radio" name="radio-set" id="about-label">
+                <a href="#service-container" for="about-label">ABOUT</a>
+
+                <input type="radio" name="radio-set" id="team-label">
+                <a href="#our-team" for="team-label">TEAM</a>
+
+                <input type="radio" name="radio-set" id="contact-label">
+                <a href="#formInputs" for="contact-label">CONTACT</a>
             </ul>
+
           </section>
           <section class="header-contents">
             <img src="./img/logo.png" alt="SSSH Band Logo." id="logo-pic">
@@ -29,6 +45,7 @@
           </section>
       </section>
     </header>
+
     <!-- This is SALAM's section: Services -->
     <section class="wrapper">
       <div class="services">
@@ -61,12 +78,10 @@
             <h2>Hosting Websites</h2>
             <h3>Used techniques</h3>
           </div>
-
-
         </div>
-
       </div>
     </section>    <!-- This is SAMAR's section: Team -->
+
     <section class="our-team" id="our-team">
       <div class="overlay">
       <div class="container">
@@ -113,8 +128,8 @@
       </div>
     </div>
     </section>
-    <!-- This is Tariq's section: Contact-Footer -->
 
+    <!-- This is Tariq's section: Contact-Footer -->
     <form name="message" method="post">
       <h3 id="letsWork">Lets Work Together</h6>
     <section id="formInputs">
@@ -142,7 +157,7 @@
     </section>
 
     <button type="button" name="button">Submit</button>
-</form>
+    </form>
 
     <footer id="footer">
         <section class="left">
@@ -156,4 +171,5 @@
         <p>All Copy Right 	&copy; 2017</p>
     </footer>
   </body>
+
 </html>
