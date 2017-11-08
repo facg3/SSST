@@ -12,4 +12,15 @@ A Team portfolio website is all about promoting us. a brand, our name is SSST Te
 4. Fourth section: Contact us, which contains a form that allows a client contact our brand easily, and that allows us to contact the client back.
 
 ## HOW:
-ABC
+First we draw wireframes for website form
+
+
+## Then: 
+- We devided work between us as Follow:
+
+- Sultan: Made the header section and navigation bar.
+- Salam: Made Our Services section.
+- Samar: Made Our Team section.
+- Tariq: Made the Contact Us Form.
+
+Then We made ReadMe, and Sultan created the repository SSST,and every one created a branch to do his part after doing our tasks we merged the branches where we faced a lot of issues of conflicting.
