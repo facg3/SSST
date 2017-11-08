@@ -4,7 +4,6 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>SSST Brand</title>
-      <link href="https://fonts.googleapis.com/css?family=Courgette|Source+Serif+Pro" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="style.css" />
       <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,171 +11,185 @@
   </head>
 
   <body>
+    <scroll-container>
 
-    <!-- This is SULTAN section: Header -->
-    <header>
-      <section class="header-body" id="header-body">
+      <scroll-page id="home-label-scroll">
+        <!-- This is SULTAN section: Header -->
+        <header>
+          <section class="header-body" id="header-body">
 
-          <section class="header-top">
+              <section class="header-top">
 
-            <ul class="head-top-labels">
+                <ul class="head-top-labels">
 
-                <input type="radio" name="radio-set" id="SSST-Band">
-                <a href="#header-body" for="home-label">SSST Band</a>
+                    <input type="radio" name="radio-set" id="SSST-Band">
+                    <a href="#header-body" for="home-label" style="color: #C44513; font-weight: bold;">SSST Band</a>
 
 
-                <input type="radio" name="radio-set" id="home-label">
-                <a href="#header-body" for="home-label">HOME</a>
+                    <input type="radio" name="radio-set" id="home-label">
+                    <a href="#header-body" for="home-label">HOME</a>
 
-                <input type="radio" name="radio-set" id="about-label">
-                <a href="#service-container" for="about-label">ABOUT</a>
+                    <input type="radio" name="radio-set" id="services-label">
+                    <a href="#service-container-scroll" for="services-label">SERVICES</a>
 
-                <input type="radio" name="radio-set" id="team-label">
-                <a href="#our-team" for="team-label">TEAM</a>
+                    <input type="radio" name="radio-set" id="team-label">
+                    <a href="#our-team-scroll" for="team-label">TEAM</a>
 
-                <input type="radio" name="radio-set" id="contact-label">
-                <a href="#formInputs" for="contact-label">CONTACT</a>
-            </ul>
+                    <input type="radio" name="radio-set" id="contact-label">
+                    <a href="#contact-form-scroll" for="contact-label">CONTACT</a>
+                </ul>
 
+              </section>
+              <section class="header-contents">
+                <img src="./img/logo.png" alt="SSSH Band Logo." id="logo-pic">
+                <h1 style="background-vi">SSST Band:</h1>
+                <p>We build your ideas.</p>
+              </section>
           </section>
-          <section class="header-contents">
-            <img src="./img/logo.png" alt="SSSH Band Logo." id="logo-pic">
-            <h1>SSST Band:</h1>
-            <p>We build your ideas.</p>
-          </section>
-      </section>
-    </header>
+        </header>
 
-    <!-- This is SALAM's section: Services -->
-    <section class="wrapper">
-      <div class="services">
-        <h2>Our Services</h2>
-      </div>
-      <div class="flex-container">
-        <div class="box">
+
+      </scroll-page>
+      <scroll-page id="service-container-scroll">
+        <!-- This is SALAM's section: Services -->
+        <section class="wrapper" id="service-container">
+          <div class="services">
+          <h1>Our Services</h1>
+          </div>
+          <div class="flex-container">
+          <div class="box">
           <img src="img/computer-programming.png" alt="computer development photo">
           <div class="text">
-            <h2>Web App Development</h2>
-            <h3>Used techniques</h3>
-            <h3>JavaSript, ReactJS, Express</h3>
+          <h2>Web App Development</h2>
+          <h3>Used techniques</h3>
+          <h3>JavaSript, ReactJS, Express</h3>
           </div>
 
 
-        </div>
-        <div class="box">
+          </div>
+          <div class="box">
           <img src="img/Database-Cloud-512.png" alt="hosting photo">
           <div class="text">
-            <h2>Mobile App Development</h2>
-            <h3>Used Techniques</h3>
-            <h3>React Native, Android, IOS</h3>
+          <h2>Mobile App Development</h2>
+          <h3>Used Techniques</h3>
+          <h3>React Native, Android, IOS</h3>
           </div>
 
 
+          </div>
+          <div class="box">
+          <img src="img/Mobile_Development.png" alt="mobile development photo">
+          <div class="text">
+          <h2>Hosting Websites</h2>
+          <h3>Used techniques</h3>
+          <h3>Heroku</h3>
+          </div>
 
-    <!-- This is SAMAR's section: Team -->
-    <section class='team'>
-              <div class='container'>
-                  <h1>our team</h1>
-                  <div class='person hvr-grow'>
-                      <div class='photo'>
-                          <img src="img/salam.jpg" alt="user">
+
+          </div>
+
+          </div>
+        </section>
+      </scroll-page>
+
+      <scroll-page id="our-team-scroll">
+        <!-- This is SAMAR's section: Team -->
+        <section class='team' id="our-team">
+                  <div class='container'>
+                      <h1>Our Team:</h1>
+                      <div class='person hvr-grow'>
+                          <div class='photo'>
+                              <img src="img/salam.jpg" alt="user">
+                          </div>
+                          <div class='name'>
+                              <h3>Salam Dalloul</h3>
+                              <p>web developer</p>
+                          </div>
+                          <div class='info'>
+                            <i class="fa fa-linkedin fa-lg"></i>
+                            <i class="fa fa-github-alt fa-lg"></i>
+                            <i class="fa fa-twitter fa-lg"></i>
+                          </div>
                       </div>
-                      <div class='name'>
-                          <h3>Salam Dalloul</h3>
-                          <p>web developer</p>
+                      <div class='person hvr-grow'>
+                          <div class='photo'>
+                              <img src="img/samar.jpg" alt="samar F. al-Jazzar">
+                          </div>
+                          <div class='name'>
+                              <h3>Samar F.aljazzar</h3>
+                              <p>web developer</p>
+                          </div>
+                          <div class='info'>
+                            <i class="fa fa-linkedin fa-lg"></i>
+                            <i class="fa fa-github-alt fa-lg"></i>
+                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
+                          </div>
                       </div>
-                      <div class='info'>
-                        <i class="fa fa-linkedin fa-lg"></i>
-                        <i class="fa fa-github-alt fa-lg"></i>
-                        <i class="fa fa-twitter fa-lg"></i>
+                      <div class='person hvr-grow'>
+                          <div class='photo'>
+                              <img src="img/sultan.jpg" alt="Sultan H. Assi">
+                          </div>
+                          <div class='name'>
+                              <h3>Sultan H. Assi</h3>
+                              <p>web developer</p>
+                          </div>
+                          <div class='info'>
+                            <i class="fa fa-linkedin fa-lg"></i>
+                            <i class="fa fa-github-alt fa-lg"></i>
+                            <i class="fa fa-twitter fa-lg"></i>
+                          </div>
+                      </div>
+                      <div class='person hvr-grow'>
+                          <div class='photo'>
+                              <img src="img/tareq.png" alt="Tariq B. Al-Qazzaz">
+                          </div>
+                          <div class='name'>
+                              <h3>Tariq B. Al-Qazzaz </h3>
+                              <p>web developer</p>
+                          </div>
+                          <div class='info'>
+                            <i class="fa fa-linkedin fa-lg"></i>
+                            <i class="fa fa-github-alt fa-lg"></i>
+                            <i class="fa fa-twitter fa-lg"></i>
+                          </div>
                       </div>
                   </div>
-                  <div class='person hvr-grow'>
-                      <div class='photo'>
-                          <img src="img/samar.jpg" alt="samar F. al-Jazzar">
-                      </div>
-                      <div class='name'>
-                          <h3>Samar F.aljazzar</h3>
-                          <p>web developer</p>
-                      </div>
-                      <div class='info'>
-                        <i class="fa fa-linkedin fa-lg"></i>
-                        <i class="fa fa-github-alt fa-lg"></i>
-                        <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
-                      </div>
-                  </div>
-                  <div class='person hvr-grow'>
-                      <div class='photo'>
-                          <img src="img/sultan.jpg" alt="Sultan H. Assi">
-                      </div>
-                      <div class='name'>
-                          <h3>Sultan H. Assi</h3>
-                          <p>web developer</p>
-                      </div>
-                      <div class='info'>
-                        <i class="fa fa-linkedin fa-lg"></i>
-                        <i class="fa fa-github-alt fa-lg"></i>
-                        <i class="fa fa-twitter fa-lg"></i>
-                      </div>
-                  </div>
-                  <div class='person hvr-grow'>
-                      <div class='photo'>
-                          <img src="img/tareq.png" alt="Tariq B. Al-Qazzaz">
-                      </div>
-                      <div class='name'>
-                          <h3>Tariq B. Al-Qazzaz </h3>
-                          <p>web developer</p>
-                      </div>
-                      <div class='info'>
-                        <i class="fa fa-linkedin fa-lg"></i>
-                        <i class="fa fa-github-alt fa-lg"></i>
-                        <i class="fa fa-twitter fa-lg"></i>
-                      </div>
-                  </div>
+              </section></scroll-page>
+      <scroll-page id="contact-form-scroll">
+        <!-- This is Tariq's section: Contact-Footer -->
+        <section class="contact-form" id="contact-form">
+          <form name="message" method="post" id="message">
+
+          <h1>Lets Work Together:</h1>
+
+          <section id="formInputs">
+
+            <label for="name">Your Name:</label>
+            <input id="name" type="text" value="" name="name" placeholder=" Name ..."><br>
+
+            <label for="email">Your Email:</label>
+            <input id="email" type="text" value="" name="email" placeholder="Email ...">
+
+
           </section>
 
+        <section id="tellMe">
 
-    <!-- This is Tariq's section: Contact-Footer -->
-    <form name="message" method="post">
-      <h3 id="letsWork">Lets Work Together</h6>
-    <section id="formInputs">
+          <label for="message">Tell me about your project:</label>
+          <textarea id="message" rows="10" cols="72" placeholder="Your message here"></textarea>
 
-    <section style="float:left;margin-right:20px;">
-        <label for="name">Your Name : </label>
-        <input id="name" type="text" value="" name="name" placeholder=" Name ...">
-    </section>
-
-    <section style="float:left;">
-        <label for="email">Your Email : </label>
-        <input id="email" type="text" value="" name="email" placeholder="Email ...">
-    </section>
-
-    <br style="clear:both;" />
-
-    </section>
-
-    <section id="tellMe">
-
-    <label for="message">Tell me about your project</label>
-
-    <textarea rows="10" cols="72" placeholder=""></textarea>
-
-    </section>
-
-    <button type="button" name="button">Submit</button>
-    </form>
-
-    <footer id="footer">
-        <section class="left">
-          <ul id="menu">
-            <li>Home</li>
-            <li>About</li>
-            <li>Team</li>
-            <li>Contact</li>
-          </ul>
         </section>
-        <p>All Copy Right 	&copy; 2017</p>
-    </footer>
-  </body>
 
+        <button type="button" name="button">Submit</button>
+      </form>
+    </section>
+  </scroll-page>
+
+
+    </scroll-container>
+
+        <footer id="footer">
+            <p id="copyRight">&copy; Copy rights reserved: SSST Band</p>
+        </footer>
+</body>
 </html>
