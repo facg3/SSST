@@ -4,7 +4,7 @@
 }
 
 .container {
-    width: 1200px;
+    width: 100%;
     margin: auto;
 }
 .text-center{
@@ -214,6 +214,11 @@ footer p {
   }
 
 }
+
+
+/*sultan*/
+
+
 .header-body{
   background-color: #000000;
   background-image: url(./img/website-startups.jpg);
@@ -227,24 +232,23 @@ footer p {
   width: 100%;
   height: 5vh;
   padding-top: 2.5vh;
-  background-color: rgba(96, 125, 139, 0.2);
-  text-align: center;
+  background-color: rgba(96, 125, 139, 0.9);
+  z-index: 1;
 }
 
 
-.head-top-labels li{
+.head-top-labels input{
   font-size: 16px;
-  margin-left: 5vh;
-  margin-right: 5vh;
   display: inline;
+  visibility: hidden;
+  text-decoration: none;
+  float: right;
 }
+
 
 .header-contents{
-  background-image: url(./img/logo.jpg);
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  margin-top: 10vh;
   text-align: center;
+  padding-top: 30vh;
 }
 
 #logo-pic{
@@ -264,41 +268,59 @@ p{
   font-size: 24px;
 }
 
-#home-label:checked ~ body{
+
+
+.header-top{
+  position: fixed;
+}
+
+#home-label:checked ~ .body{
   transform: translateY(0%);
 }
 
 
-#about-label:checked ~ body{
+#about-label:checked ~ .body{
   transform: translateY(-100%);
 }
 
 
-#team-label:checked ~ body{
+#team-label:checked ~ .body{
   transform: translateY(-200%);
 }
 
 
-#contact-label:checked ~ body{
+#contact-label:checked ~ .body{
   transform: translateY(-300%);
 }
+.head-top-labels{
+  width: 100%;
+  text-align: left;
+}
 
-@media only screen and (max-width: 430px) {
+.head-top-labels a{
+  text-decoration: none;
+  margin-left: 5vh;
+  color: black;
+}
+.head-top-labels a:visited{
+  color: black;
+}
+.head-top-labels a:checked{
+  color: orange;
+}
+@media only screen and (max-width: 550px) {
 
-  .head-top-labels label{
-    font-size: 10px;
-    justify-content: space-around;
+  .head-top-labels a{
+    text-align: center;
+    float: none;
+    font-size: 16px;
     flex-direction: row;
-    margin-right: 2.5vh;
-    margin-left: 2.5vh;
+    margin-left: 1vh
   }
 
   .header-contents{
-    background-image: url(./img/logo.jpg);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    margin-top: 10vh;
     text-align: center;
+    padding-top: 30vh;
   }
 
   #logo-pic{
@@ -311,6 +333,45 @@ p{
   }
   p{
     font-size: 18px;
+  }
+
+}
+@media only screen and (max-width: 440px) {
+  .head-top-labels a{
+    text-align: center;
+    font-size: 16px;
+    margin-right: 2vh;
+  }
+  .head-top-labels input{
+    padding-bottom: 2vh;
+  }
+  .head-top-labels{
+    text-align: center;
+  }
+  .header-contents{
+    text-align: center;
+    padding-top: 30vh;
+  }
+
+  #logo-pic{
+    width: 95px;
+    height: 95px;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+  p{
+    font-size: 14px;
+  }
+
+  .header-top{
+    width: 100%;
+    height: 10vh;
+    padding-top: 2.5vh;
+    background-color: rgba(96, 125, 139, 0.9);
+    z-index: 1;
+    padding-left: 2.5vh;
   }
 
 }
