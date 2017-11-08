@@ -1,18 +1,73 @@
-.servise-prop{
+/* Services section */
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.flex-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  align-items: stretch;
-  flex-flow: row wrap;
-  padding-top: 10px;
+  flex-direction: row;
+  flex: 1;
 }
-.srevices img{
-  width: 300px;
-  align-self: center;
-}
-.srevices {
+
+.box {
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex: 1;
+  justify-content: center;
 }
+
+.box img {
+  width: 200px;
+  flex: 1;
+}
+
+.wrapper .services {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.box .text {
+  flex: 1;
+  padding-top: 20px;
+}
+
+.text h2, h3 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 777px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .box img {
+    width: 100px;
+  }
+  .text h2{
+    font-size: 18px;
+  }
+  .text  h3 {
+    font-size: 15px;
+    
+  }
+}
+/* End Services section */
