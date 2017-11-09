@@ -43,7 +43,7 @@
   height: 175px;
 }
 
-h1{
+.h1-style{
   font-size: 48px;
   font-family: system-ui;
   color: #C44513;
@@ -51,11 +51,11 @@ h1{
   text-align: center;
   width: 100%;
 }
-.header-contents p{
+.header-contents #header-p{
   font-size: 24px;
 }
 
-.header-contents h1{
+.header-contents #header-h1{
   background-color: inherit;
 }
 
@@ -132,15 +132,16 @@ scroll-container {
     height: 125px;
   }
 
-  h1{
+  #header-h1{
     font-size: 36px;
   }
-  p{
+  #header-p{
     font-size: 18px;
   }
 
 }
 @media only screen and (max-width: 440px) {
+
   .head-top-labels a{
     text-align: center;
     font-size: 16px;
@@ -162,10 +163,10 @@ scroll-container {
     height: 95px;
   }
 
-  h1{
+  #header-h1{
     font-size: 30px;
   }
-  p{
+  #header-p{
     font-size: 14px;
   }
 
@@ -187,7 +188,8 @@ width: 100%;
 margin: 0 auto;
 justify-content: center;
 padding-bottom: 16vh;
-padding-top: 10vh;
+padding-top: 15vh;
+height: 100vh;
 }
 .flex-container {
 padding-top: 80px;
@@ -221,11 +223,17 @@ margin-top: 10px;
 text-align: center;
 }
 @media only screen and (max-width: 777px) {
+.wrapper{
+  height: auto;
+}
 .flex-container {
 flex-direction: column;
 }
 }
 @media only screen and (max-width: 430px) {
+  .wrapper{
+    height: auto;
+  }
 .box img {
 width: 100px;
 }
@@ -236,6 +244,7 @@ width: 100px;
 #our-team{
   padding-top: 15vh;
   padding-bottom: 10vh;
+  height: 100vh;
 }
 .container{
 width: 100%;
@@ -283,7 +292,6 @@ padding: 20px;
 text-align: center;
 display: inline-block;
 margin-left: 1%;
-/margin-top: -280px;/
 }
 .team .person .photo {
 width: 350px;
@@ -294,14 +302,14 @@ padding: 0 0 10px 0;
 width: 100%;
 height: 100%;
 border-radius: 50%;
-filter: gray;
+/*filter: gray;*/
 filter: grayscale(1);
--webkit-filter: grayscale(1)
+/*-webkit-filter: grayscale(1)*/
 }
 .team .person:hover .photo img{
 filter: none;
 filter: grayscale(0);
--webkit-filter: grayscale(0)
+/*-webkit-filter: grayscale(0)*/
 }
 .team .person .name h3,
 .team .person .name p {
@@ -315,20 +323,23 @@ padding: 10px 0 0 0;
 .hvr-grow {
 display: inline-block;
 vertical-align: middle;
--webkit-transform: perspective(1px) translateZ(0);
+/*-webkit-transform: perspective(1px) translateZ(0);*/
 transform: perspective(1px) translateZ(0);
 box-shadow: 0 0 1px transparent;
--webkit-transition-duration: 0.3s;
+/*-webkit-transition-duration: 0.3s;*/
 transition-duration: 0.3s;
--webkit-transition-property: transform;
+/*-webkit-transition-property: transform;*/
 transition-property: transform;
 }
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
--webkit-transform: scale(1.1);
+/*-webkit-transform: scale(1.1);*/
 transform: scale(1.1);
 }
 /*/ End Hover /*/
 @media(min-width:348px) {
+  #our-team{
+    height: auto;
+  }
 .team {
 text-align: center;
 }
@@ -347,6 +358,9 @@ height: 100%;
 }
 }
 @media (min-width:500px) {
+  #our-team{
+    height: auto;
+  }
 .team {
 text-align: center;
 }
@@ -358,6 +372,9 @@ width: 48%;
 }
 }
 @media(min-width:775px) {
+  #our-team{
+    height: auto;
+  }
 .team {
 text-align: center;
 }
@@ -369,6 +386,9 @@ width: 35%;
 }
 }
 @media(min-width:975px) {
+  #our-team{
+    height: auto;
+  }
 .team {
 text-align: center;
 }
@@ -381,6 +401,9 @@ width: 23%;
 }
 
 @media(max-width: 355px){
+  #our-team{
+    height: auto;
+  }
 
   .team{
   text-align: center;
@@ -405,8 +428,10 @@ width: 23%;
 /*Tariq Begins*/
 .contact-form{
   text-align: center;
+  height: 100vh;
+  padding-top: 15vh;
 }
-form {
+.message-form {
 width: 50%;
 height: auto ;
 margin: 0 auto;
@@ -415,9 +440,6 @@ padding-bottom: 100px ;
 margin-bottom: 15px ;
 margin-top: 15px ;
 border-radius: 10px ;
-}
-letsWork {
-margin-left: 7em ;
 }
 
 #formInputs{
@@ -428,7 +450,7 @@ margin-left: 7em ;
 margin-top: 2.5vh;
 text-align: left;
 }
-form button {
+form .submet-button {
 height: 40px ; width: 100px ;
 background-color: white ;
 border-radius: 10px;
@@ -438,12 +460,12 @@ border-radius: 10px;
   margin-bottom: 1vh;
 }
 
-form input{
+form .input-field{
   border-radius: 10px;
   height: 5vh;
   padding-left: 1vh;
 }
-form textarea{
+form .text-area{
   border-radius: 10px;
   padding-left: 1vh;
   padding-top: 1vh;
@@ -463,12 +485,12 @@ font-weight: bold;
 
 
 @media screen and (max-width: 959px) {
-textarea{
+.text-area{
 width: 100% ;
 }
 }
 @media screen and (max-width: 600px) {
-textarea{
+.text-area{
 width: 100% ;
 }
 footer .left {
