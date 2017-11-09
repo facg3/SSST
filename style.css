@@ -28,6 +28,10 @@ scroll-container {
   z-index: 1;
 }
 
+.label-home{
+  background-color: white;
+}
+
 .header-contents{
   text-align: center;
   padding-top: 30vh;
@@ -54,22 +58,22 @@ scroll-container {
   position: fixed;
 }
 
-.head-top-labels{
+.head-top-menu{
   width: 100%;
   text-align: left;
 }
-.head-top-labels a{
+.head-top-menu a{
   text-decoration: none;
   margin-left: 5vh;
   color: black;
 }
-.head-top-labels a:visited{
+.head-top-menu a:visited{
   color: black;
 }
-.head-top-labels a:checked{
+.head-top-menu a:checked{
   color: orange;
 }
-.head-top-labels input{
+.head-top-menu input{
   font-size: 16px;
   display: inline;
   visibility: hidden;
@@ -81,7 +85,7 @@ scroll-container {
 
 @media only screen and (max-width: 550px) {
 
-  .head-top-labels a{
+  .head-top-menu a{
     text-align: center;
     float: none;
     font-size: 16px;
@@ -109,15 +113,15 @@ scroll-container {
 }
 @media only screen and (max-width: 440px) {
 
-  .head-top-labels a{
+  .head-top-menu a{
     text-align: center;
     font-size: 16px;
     margin-right: 2vh;
   }
-  .head-top-labels input{
+  .head-top-menu input{
     padding-bottom: 2vh;
   }
-  .head-top-labels{
+  .head-top-menu{
     text-align: center;
   }
   .header-contents{
