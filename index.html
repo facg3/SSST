@@ -11,184 +11,180 @@
   </head>
 
   <body>
-    <scroll-container>
+          <scroll-container>
+            <!-- This is SULTAN section: Header -->
+                <scroll-page id="home-label-scroll">
+                  <header>
+                    <section class="header-body" id="header-body">
 
-      <scroll-page id="home-label-scroll">
-        <!-- This is SULTAN section: Header -->
-        <header>
-          <section class="header-body" id="header-body">
+                        <section class="header-top">
 
-              <section class="header-top">
-
-                <section class="head-top-labels">
-                    <input type="radio" name="radio-set" id="SSST-Band">
-                    <a href="#header-body" for="home-label" style="color: #C44513; font-weight: bold;">SSST Band</a>
-
-
-                    <input type="radio" name="radio-set" id="home-label">
-                    <a href="#header-body" for="home-label">HOME</a>
-
-                    <input type="radio" name="radio-set" id="services-label">
-                    <a href="#service-container-scroll" for="services-label">SERVICES</a>
-
-                    <input type="radio" name="radio-set" id="team-label">
-                    <a href="#our-team-scroll" for="team-label">TEAM</a>
-
-                    <input type="radio" name="radio-set" id="contact-label">
-                    <a href="#contact-form-scroll" for="contact-label">CONTACT</a>
-                </section>
-
-              </section>
-              <section class="header-contents">
-                <img src="./img/logo.png" alt="SSSH Band Logo." id="logo-pic">
-                <h1 class="h1-style" style="background-vi" id="header-h1">SSST Band:</h1>
-                <p id="header-p">We build your ideas.</p>
-              </section>
-          </section>
-        </header>
+                          <section class="head-top-labels">
+                              <input type="radio" name="radio-set" id="SSST-Band">
+                              <a href="#header-body" for="home-label" style="color: black; font-weight: bold;">SSST Band</a>
 
 
-      </scroll-page>
-      <scroll-page id="service-container-scroll">
-        <!-- This is SALAM's section: Services -->
-        <section class="wrapper" id="service-container">
-          <div class="services">
-          <h1 class="h1-style" >Our Services</h1>
-          </div>
-          <div class="flex-container">
-          <div class="box">
-          <img src="img/computer-programming.png" alt="computer development photo">
-          <div class="text">
-          <h2>Web App Development</h2>
-          <h3>Used techniques</h3>
-          <h3>JavaSript, ReactJS, Express</h3>
-          </div>
+                              <input type="radio" name="radio-set" id="home-label">
+                              <a href="#header-body" for="home-label" class="a-style">HOME</a>
+
+                              <input type="radio" name="radio-set" id="services-label">
+                              <a href="#service-container-scroll" for="services-label" class="a-style">SERVICES</a>
+
+                              <input type="radio" name="radio-set" id="team-label">
+                              <a href="#our-team-scroll" for="team-label" class="a-style">TEAM</a>
+
+                              <input type="radio" name="radio-set" id="contact-label">
+                              <a href="#contact-form-scroll" for="contact-label" class="a-style">CONTACT</a>
+                          </section>
+
+                        </section>
+                        <section class="header-contents">
+                          <img src="./img/logo.png" alt="SSSH Band Logo." class="logo-pic">
+                          <h1 class="h1-style header-h1" style="background-vi">SSST Band:</h1>
+                          <p class="header-p">We build your ideas.</p>
+                        </section>
+                    </section>
+                  </header></scroll-page>
+
+                <!-- This is SALAM's section: Services -->
+                <scroll-page id="service-container-scroll">
+                  <section class="wrapper" id="service-container">
+                    <div class="services">
+                    <h1 class="h1-style" >Our Services</h1>
+                    </div>
+                    <div class="flex-container">
+                    <div class="box">
+                    <img src="img/computer-programming.png" alt="computer development photo">
+                    <div class="text">
+                    <h2>Web App Development</h2>
+                    <h3>Used techniques</h3>
+                    <h3>JavaSript, ReactJS, Express</h3>
+                    </div>
 
 
-          </div>
-          <div class="box">
-          <img src="img/Database-Cloud-512.png" alt="hosting photo">
-          <div class="text">
-          <h2>Mobile App Development</h2>
-          <h3>Used Techniques</h3>
-          <h3>React Native, Android, IOS</h3>
-          </div>
+                    </div>
+                    <div class="box">
+                    <img src="img/Database-Cloud-512.png" alt="hosting photo">
+                    <div class="text">
+                    <h2>Mobile App Development</h2>
+                    <h3>Used Techniques</h3>
+                    <h3>React Native, Android, IOS</h3>
+                    </div>
 
 
-          </div>
-          <div class="box">
-          <img src="img/Mobile_Development.png" alt="mobile development photo">
-          <div class="text">
-          <h2>Hosting Websites</h2>
-          <h3>Used techniques</h3>
-          <h3>Heroku</h3>
-          </div>
+                    </div>
+                    <div class="box">
+                    <img src="img/Mobile_Development.png" alt="mobile development photo">
+                    <div class="text">
+                    <h2>Hosting Websites</h2>
+                    <h3>Used techniques</h3>
+                    <h3>Heroku</h3>
+                    </div>
 
 
-          </div>
+                    </div>
 
-          </div>
-        </section>
-      </scroll-page>
+                    </div>
+                  </section></scroll-page>
 
-      <scroll-page id="our-team-scroll">
-        <!-- This is SAMAR's section: Team -->
-        <section class='team' id="our-team">
-                  <div class='container'>
-                      <h1 class="h1-style" >Our Team:</h1>
-                      <div class='person hvr-grow'>
-                          <div class='photo'>
-                              <img src="img/salam.jpg" alt="user">
-                          </div>
-                          <div class='name'>
-                              <h3>Salam Dalloul</h3>
-                              <p>web developer</p>
-                          </div>
-                          <div class='info'>
-                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-linkedin fa-lg"></i></a>
-                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-github-alt fa-lg"></i></a>
-                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
-                          </div>
-                      </div>
-                      <div class='person hvr-grow'>
-                          <div class='photo'>
-                              <img src="img/samar.jpg" alt="samar F. al-Jazzar">
-                          </div>
-                          <div class='name'>
-                              <h3>Samar F.aljazzar</h3>
-                              <p>web developer</p>
-                          </div>
-                          <div class='info'>
-                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-linkedin fa-lg"></i></a>
-                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-github-alt fa-lg"></i></a>
-                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
-                          </div>
-                      </div>
-                      <div class='person hvr-grow'>
-                          <div class='photo'>
-                              <img src="img/sultan.jpg" alt="Sultan H. Assi">
-                          </div>
-                          <div class='name'>
-                              <h3>Sultan H. Assi</h3>
-                              <p>web developer</p>
-                          </div>
-                          <div class='info'>
-                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-linkedin fa-lg"></i></a>
-                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-github-alt fa-lg"></i></a>
-                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
-                          </div>
-                      </div>
-                      <div class='person hvr-grow'>
-                          <div class='photo'>
-                              <img src="img/tareq.png" alt="Tariq B. Al-Qazzaz">
-                          </div>
-                          <div class='name'>
-                              <h3>Tariq B. Al-Qazzaz </h3>
-                              <p>web developer</p>
-                          </div>
-                          <div class='info'>
-                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-linkedin fa-lg"></i></a>
-                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-github-alt fa-lg"></i></a>
-                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
-                          </div>
-                      </div>
-                  </div>
-              </section></scroll-page>
-      <scroll-page id="contact-form-scroll">
-        <!-- This is Tariq's section: Contact-Footer -->
-        <section class="contact-form" id="contact-form">
-          <form class="message-form"name="message" method="post" id="message">
+                <!-- This is SAMAR's section: Team -->
+                <scroll-page id="our-team-scroll">
+                  <section class='team our-team'>
+                            <div class='container'>
+                                <h1 class="h1-style" >Our Team:</h1>
+                                <div class='person hvr-grow'>
+                                    <div class='photo'>
+                                        <img src="img/salam.jpg" alt="Salam Dalloul Photo">
+                                    </div>
+                                    <div class='name'>
+                                        <h3>Salam Dalloul</h3>
+                                        <p>web developer</p>
+                                    </div>
+                                    <div class='info'>
+                                      <a aria-label="Salam's Linkedin Link" href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-linkedin fa-lg"></i></a>
+                                      <a aria-label="Salam's Github Link" href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-github-alt fa-lg"></i></a>
+                                      <a aria-label="Salam's Twitter Link" href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
+                                    </div>
+                                </div>
+                                <div class='person hvr-grow'>
+                                    <div class='photo'>
+                                        <img src="img/samar.jpg" alt="samar F. al-Jazzar Photo">
+                                    </div>
+                                    <div class='name'>
+                                        <h3>Samar F.aljazzar</h3>
+                                        <p>web developer</p>
+                                    </div>
+                                    <div class='info'>
+                                      <a aria-label="Samar's Linkedin Link" href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-linkedin fa-lg"></i></a>
+                                      <a aria-label="Samar's Github Link" href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-github-alt fa-lg"></i></a>
+                                      <a aria-label="Samar's Twitter Link" href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
+                                    </div>
+                                </div>
+                                <div class='person hvr-grow'>
+                                    <div class='photo'>
+                                        <img src="img/sultan.jpg" alt="Sultan H. Assi Photo">
+                                    </div>
+                                    <div class='name'>
+                                        <h3>Sultan H. Assi</h3>
+                                        <p>web developer</p>
+                                    </div>
+                                    <div class='info'>
+                                      <a aria-label="Sultan's Linkedin Link"href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-linkedin fa-lg"></i></a>
+                                      <a aria-label="Sultan's Github Link"href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-github-alt fa-lg"></i></a>
+                                      <a aria-label="Sultan's Twittr Link"href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
+                                    </div>
+                                </div>
+                                <div class='person hvr-grow'>
+                                    <div class='photo'>
+                                        <img src="img/tareq.png" alt="Tariq B. Al-Qazzaz Photo">
+                                    </div>
+                                    <div class='name'>
+                                        <h3>Tariq B. Al-Qazzaz </h3>
+                                        <p>web developer</p>
+                                    </div>
+                                    <div class='info'>
+                                      <a aria-label="Tariq's Linkedin Link" href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-linkedin fa-lg"></i></a>
+                                      <a aria-label="Tariq's Github Link" href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-github-alt fa-lg"></i></a>
+                                      <a aria-label="Tariq's Twitter Link" href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section></scroll-page></scroll-page>
 
-          <h1 class="h1-style" >Lets Work Together:</h1>
+                <!-- This is Tariq's section: Contact-Footer -->
+                <scroll-page id="contact-form-scroll">
+                  <section class="contact-form" id="contact-form">
+                    <form class="message-form"name="message" method="post" id="message">
 
-          <section id="formInputs">
+                          <h1 class="h1-style" >Lets Work Together:</h1>
 
-            <label for="name">Your Name:</label>
-            <input class="input-field" id="name" type="text" name="name" placeholder=" Name ..."><br>
+                          <section id="formInputs">
 
-            <label for="email">Your Email:</label>
-            <input class="input-field" id="email" type="text" value="" name="email" placeholder="Email ...">
+                            <label for="name">Your Name:</label>
+                            <input class="input-field" id="name" type="text" name="name" placeholder=" Name ..."><br>
 
-
-          </section>
-
-        <section id="tellMe">
-
-          <label for="message">Tell me about your project:</label>
-          <textarea class="text-area" id="message" rows="10" cols="72" placeholder="Your message here"></textarea>
-
-        </section>
-
-        <button class="submet-button" type="button" name="button">Submit</button>
-      </form>
-    </section>
-  </scroll-page>
+                            <label for="email">Your Email:</label>
+                            <input class="input-field" id="email" type="text" value="" name="email" placeholder="Email ...">
 
 
-    </scroll-container>
+                          </section>
+                          <section id="tellMe">
 
-        <footer id="footer">
+                              <label for="message">Tell me about your project:</label>
+                              <textarea class="text-area" id="message" rows="10" cols="72" placeholder="Your message here"></textarea>
+
+                          </section>
+
+                        <button class="submet-button" type="button" name="button">Submit</button>
+                      </form>
+                  </section></scroll-page>
+
+
+          </scroll-container>
+
+          <footer>
             <p id="copyRight">&copy; Copy rights reserved: SSST Band</p>
-        </footer>
-</body>
+          </footer>
+
+      </body>
 </html>
