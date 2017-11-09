@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <meta charset="utf-8" />
+      <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>SSST Brand</title>
       <link rel="stylesheet" type="text/css" href="style.css" />
@@ -20,8 +20,7 @@
 
               <section class="header-top">
 
-                <ul class="head-top-labels">
-
+                <section class="head-top-labels">
                     <input type="radio" name="radio-set" id="SSST-Band">
                     <a href="#header-body" for="home-label" style="color: #C44513; font-weight: bold;">SSST Band</a>
 
@@ -37,13 +36,13 @@
 
                     <input type="radio" name="radio-set" id="contact-label">
                     <a href="#contact-form-scroll" for="contact-label">CONTACT</a>
-                </ul>
+                </section>
 
               </section>
               <section class="header-contents">
                 <img src="./img/logo.png" alt="SSSH Band Logo." id="logo-pic">
-                <h1 style="background-vi">SSST Band:</h1>
-                <p>We build your ideas.</p>
+                <h1 class="h1-style" style="background-vi" id="header-h1">SSST Band:</h1>
+                <p id="header-p">We build your ideas.</p>
               </section>
           </section>
         </header>
@@ -54,7 +53,7 @@
         <!-- This is SALAM's section: Services -->
         <section class="wrapper" id="service-container">
           <div class="services">
-          <h1>Our Services</h1>
+          <h1 class="h1-style" >Our Services</h1>
           </div>
           <div class="flex-container">
           <div class="box">
@@ -96,7 +95,7 @@
         <!-- This is SAMAR's section: Team -->
         <section class='team' id="our-team">
                   <div class='container'>
-                      <h1>Our Team:</h1>
+                      <h1 class="h1-style" >Our Team:</h1>
                       <div class='person hvr-grow'>
                           <div class='photo'>
                               <img src="img/salam.jpg" alt="user">
@@ -106,9 +105,9 @@
                               <p>web developer</p>
                           </div>
                           <div class='info'>
-                            <i class="fa fa-linkedin fa-lg"></i>
-                            <i class="fa fa-github-alt fa-lg"></i>
-                            <i class="fa fa-twitter fa-lg"></i>
+                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-github-alt fa-lg"></i></a>
+                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
                           </div>
                       </div>
                       <div class='person hvr-grow'>
@@ -120,8 +119,8 @@
                               <p>web developer</p>
                           </div>
                           <div class='info'>
-                            <i class="fa fa-linkedin fa-lg"></i>
-                            <i class="fa fa-github-alt fa-lg"></i>
+                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-github-alt fa-lg"></i></a>
                             <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
                           </div>
                       </div>
@@ -134,9 +133,9 @@
                               <p>web developer</p>
                           </div>
                           <div class='info'>
-                            <i class="fa fa-linkedin fa-lg"></i>
-                            <i class="fa fa-github-alt fa-lg"></i>
-                            <i class="fa fa-twitter fa-lg"></i>
+                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-github-alt fa-lg"></i></a>
+                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
                           </div>
                       </div>
                       <div class='person hvr-grow'>
@@ -148,9 +147,9 @@
                               <p>web developer</p>
                           </div>
                           <div class='info'>
-                            <i class="fa fa-linkedin fa-lg"></i>
-                            <i class="fa fa-github-alt fa-lg"></i>
-                            <i class="fa fa-twitter fa-lg"></i>
+                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-github-alt fa-lg"></i></a>
+                            <a href="https://twitter.com/SamarFayez95?lang=ar"><i class="fa fa-twitter fa-lg"></i></a>
                           </div>
                       </div>
                   </div>
@@ -158,17 +157,17 @@
       <scroll-page id="contact-form-scroll">
         <!-- This is Tariq's section: Contact-Footer -->
         <section class="contact-form" id="contact-form">
-          <form name="message" method="post" id="message">
+          <form class="message-form"name="message" method="post" id="message">
 
-          <h1>Lets Work Together:</h1>
+          <h1 class="h1-style" >Lets Work Together:</h1>
 
           <section id="formInputs">
 
             <label for="name">Your Name:</label>
-            <input id="name" type="text" value="" name="name" placeholder=" Name ..."><br>
+            <input class="input-field" id="name" type="text" name="name" placeholder=" Name ..."><br>
 
             <label for="email">Your Email:</label>
-            <input id="email" type="text" value="" name="email" placeholder="Email ...">
+            <input class="input-field" id="email" type="text" value="" name="email" placeholder="Email ...">
 
 
           </section>
@@ -176,11 +175,11 @@
         <section id="tellMe">
 
           <label for="message">Tell me about your project:</label>
-          <textarea id="message" rows="10" cols="72" placeholder="Your message here"></textarea>
+          <textarea class="text-area" id="message" rows="10" cols="72" placeholder="Your message here"></textarea>
 
         </section>
 
-        <button type="button" name="button">Submit</button>
+        <button class="submet-button" type="button" name="button">Submit</button>
       </form>
     </section>
   </scroll-page>
