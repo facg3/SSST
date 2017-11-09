@@ -91,7 +91,6 @@ scroll-container {
   display: block;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  overflow-y: hidden;
   height: 100vh;
 }
 
@@ -247,6 +246,11 @@ width: 100px;
   padding-bottom: 10vh;
   height: 100vh;
 }
+#our-team p{
+
+  color: black;
+}
+
 .container{
 width: 100%;
 margin: auto;
